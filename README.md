@@ -22,23 +22,24 @@ For training X3/X4 model, loading X2 models as pre-train model can significantly
                                                            | -- X4
 ### Citation
 If you find our work is helpful, please cite our paper and EDSR
-@article{yang2019lcscnet,
-  title={LCSCNet: Linear Compressing-Based Skip-Connecting Network for Image Super-Resolution},
-  author={Yang, Wenming and Zhang, Xuechen and Tian, Yapeng and Wang, Wei and Xue, Jing-Hao and Liao, Qingmin},
-  journal={IEEE Transactions on Image Processing},
-  volume={29},
-  pages={1450--1464},
-  year={2019},
-  publisher={IEEE}
-}
-
-@InProceedings{Lim_2017_CVPR_Workshops,
-  author = {Lim, Bee and Son, Sanghyun and Kim, Heewon and Nah, Seungjun and Lee, Kyoung Mu},
-  title = {Enhanced Deep Residual Networks for Single Image Super-Resolution},
-  booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
-  month = {July},
-  year = {2017}
-}
+###
+       @article{yang2019lcscnet,
+        title={LCSCNet: Linear Compressing-Based Skip-Connecting Network for Image Super-Resolution},
+        author={Yang, Wenming and Zhang, Xuechen and Tian, Yapeng and Wang, Wei and Xue, Jing-Hao and Liao, Qingmin},
+        journal={IEEE Transactions on Image Processing},
+        volume={29},
+        pages={1450--1464},
+        year={2019},
+        publisher={IEEE}
+       }
+       
+       @InProceedings{Lim_2017_CVPR_Workshops,
+        author = {Lim, Bee and Son, Sanghyun and Kim, Heewon and Nah, Seungjun and Lee, Kyoung Mu},
+        title = {Enhanced Deep Residual Networks for Single Image Super-Resolution},
+        booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR) Workshops},
+        month = {July},
+        year = {2017}
+       }
 
 ### Acknowledge
 The pytorch version of our paper is built on [EDSR](https://github.com/LimBee/NTIRE2017), we thank the authors for sharing their codes!

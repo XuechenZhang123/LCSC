@@ -14,7 +14,8 @@ The scripts for E-LCSCNet in the paper is
 For training X3/X4 model, loading X2 models as pre-train model can significantly improve the performance. Please specify '--pre_train' to the corresponding X2 model in these cases. 
 
 ## Test code 
-1. Download widely-used test dataset for deep learning SISR: [Set5](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [Set14](https://sites.google.com/site/romanzeyde/research-interests), [B100](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [Urban100](https://sites.google.com/site/jbhuang0604/publications/struct_sr). All the test dataset have the structure as follows:       
+1. Download widely-used test dataset for deep learning SISR: [Set5](http://people.rennes.inria.fr/Aline.Roumy/results/SR_BMVC12.html), [Set14](https://sites.google.com/site/romanzeyde/research-interests), [B100](https://www2.eecs.berkeley.edu/Research/Projects/CS/vision/bsds/) and [Urban100](https://sites.google.com/site/jbhuang0604/publications/struct_sr). All the test dataset have the structure as follows: 
+
                                        |---- HR 
                        Test_Dataset -- |                   | -- X2   
                                        |---- LR_bicubic -- | -- X3

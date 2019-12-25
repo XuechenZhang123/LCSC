@@ -7,10 +7,10 @@ In this paper, we develop a concise but efficient network architecture called li
 2. Specify in 'src/demo.sh'. 
        For example, the scripts for training X2 BLCSCNet in the paper is 
 ### 
-     python main.py --scale 2  --save  BELCSC_X2_B9U6 --model BELCSCNET --epochs 650 --batch_size 32 --loss '1*L1' --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 6 6 6 6 6 6 6 6 6 --len 9 --multi_out False
+     python main.py --scale 2  --save  BELCSC_X2_B9U6 --model BELCSCNET --epochs 650 --batch_size 32 --loss '1*L1' --channels 64 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 6 6 6 6 6 6 6 6 6 --len 9 --multi_out False
 The scripts for training X2 E-LCSCNet in the paper is 
 ### 
-     python main.py --model FLDLCSC_X2_B9U16 --scale 2 --epochs 800 --batch_size 32  --loss '1*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1' --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --len 9 --multi_out True 
+     python main.py --model FLDLCSC_X2_B9U16 --scale 2 --epochs 800 --batch_size 32  --loss '1*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1+0.005*L1' --channels 128 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --len 9 --multi_out True 
 For training X3/X4 model, loading X2 models as pre-train model can significantly improve the performance. Please specify '--pre_train' to the corresponding X2 model in these cases. 
 
 ## Test code 
@@ -23,10 +23,10 @@ For training X3/X4 model, loading X2 models as pre-train model can significantly
 2. Specify in 'src/demo.sh'. 
        For example, the scripts for testing X2 BLCSCNet in the paper is 
 ###      
-        python main.py --data_test Set5 --scale 2 --pre_train ../experiment/BELCSC_X2_B9U6/model/model_best.pt --model BELCSCNET --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 6 6 6 6 6 6 6 6 6 --multi_out False --test_only
+        python main.py --data_test Set5 --scale 2 --pre_train ../experiment/BELCSC_X2_B9U6/model/model_best.pt --model BELCSCNET --channels 64 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 6 6 6 6 6 6 6 6 6 --multi_out False --test_only
 The scripts for testing X2 E-LCSCNet in the paper is 
 ###
-        python main.py --data_test Set5 --scale 2 --pre_train ../experiment/FLDLCSC_X2_B9U16/model/model_best.pt --model FLDLCSC --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --multi_out True --test_only        
+        python main.py --data_test Set5 --scale 2 --pre_train ../experiment/FLDLCSC_X2_B9U16/model/model_best.pt --model FLDLCSC --channels 128 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --multi_out True --test_only        
         
 ### Citation
 If you find our work is helpful, please cite our paper and EDSR

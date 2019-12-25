@@ -5,5 +5,6 @@ In this paper, we develop a concise but efficient network architecture called li
 ## Train code
 1. Download [DIV2K](https://data.vision.ee.ethz.ch/cvl/DIV2K/) to 'dataset' file
 2. Specify the parameter in 'src/demo.sh'. 
-       For example, the scripts for BLCSCNet is 
-                python main.py --scale 2 --model BELCSCNET --epochs 800 --batch_size 32
+       For example, the scripts for BLCSCNet in the paper is 
+### 
+     python main.py --scale 2  --save  BELCSC_X2_B9U6 --model BELCSCNET --epochs 650 --batch_size 32 --loss '1*L1' --rate_list [0.75, 0.71875, 0.6875, 0.65625, 0.625, 0.59375, 0.5625, 0.53125, 0.5] --len_list [6, 6, 6, 6, 6, 6, 6, 6, 6]

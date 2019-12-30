@@ -51,5 +51,5 @@ If you find our work is helpful, please cite our paper and EDSR
         year = {2017}
        }
 
-### Acknowledge
+### Acknowledgement
 The pytorch version of our paper is built on [EDSR](https://github.com/LimBee/NTIRE2017), we thank the authors for sharing their codes!

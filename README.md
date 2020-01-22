@@ -28,7 +28,10 @@ For training X3/X4 model, loading X2 models as pre-train model can significantly
         python main.py --data_test Set5 --scale 4 --pre_train ../experiment/BELCSC_X4_B9U6/model/model_best.pt --model BELCSCNET --channels 64 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 6 6 6 6 6 6 6 6 6 --multi_out False --test_only
 The scripts for testing X4 E-LCSCNet in the paper is 
 ###
-        python main.py --data_test Set5 --scale 4 --pre_train ../experiment/FLDLCSC_X4_B9U16/model/model_best.pt --model FLDLCSC --channels 128 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --multi_out True --test_only        
+        python main.py --data_test Set5 --scale 4 --pre_train ../experiment/FLDLCSC_X4_B9U16/model/model_best.pt --model FLDLCSC --channels 128 --rate_list 0.75 0.71875 0.6875 0.65625 0.625 0.59375 0.5625 0.53125 0.5 --len_list 16 16 16 16 16 16 16 16 16 --multi_out True --test_only       
+        
+4. Test codes for LCSC_76_291
+Here light models trained with small training dataset (LCSC_76_291) are also provided for testing (These models for provided for comparing with those also trained with 291 dataset). This part is based on [MatConvNet](http://www.vlfeat.org/matconvnet/) and can be implemented quite easily on any PC with MATLAB. 
         
 ### Citation
 If you find our work is helpful, please cite our paper and EDSR
